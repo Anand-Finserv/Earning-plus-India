@@ -2,21 +2,20 @@
   "name": "earningspulse-india",
   "version": "2.0.0",
   "description": "EarningsPulse India — Real-time NSE WebSocket Server",
+  "type": "module",
   "main": "server.js",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "node --watch server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.3",
     "ws": "^8.16.0",
-    "yahoo-finance": "^2.11.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.0"
+    "yahoo-finance2": "^2.11.3"
   }
 }
+
